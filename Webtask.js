@@ -87,7 +87,7 @@ let hour=Number(hour_minute_list[0])
     const daysList = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday']
     const dateObject=new Date(date)
     const weekDay=daysList[dateObject.getDay()]
-    const formatedDate=`${weekDay}, ${month} ${day}, ${year}`
+    const formatedDate=`${weekDay}, ${month} ${day}, ${year} ${city_time}`
 
   const cityName=document.querySelector('#city-name')
   const currentDate=document.querySelector('#current-date')
