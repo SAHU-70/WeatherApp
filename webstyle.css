@@ -1,0 +1,295 @@
+.background{
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+
+                z-index: -1;
+                transition: background-image 0.6s ease-in-out;
+            }
+            .overlay {
+                content: "";
+                position: absolute;
+                inset: 0;
+                background: rgba(0, 0, 0, 0.1); 
+                }
+            .background-overlay{
+                background: rgba(0, 0, 0, 0.4);
+            }
+            .navigation-bar{
+                background-color: #1E1E1E;
+                position: fixed;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 50px;
+                border-bottom-width: 2px;
+                border-bottom-color: black;
+                border-bottom-style: solid;
+                z-index: 999;
+                display: flex;
+                
+                align-items: center;
+                padding-left: 20px;
+                justify-content: space-between;
+            }
+            .navigation-elements{
+                display: flex;
+                gap: 20px;
+                align-items: center;
+                
+            }
+
+            .navigation-bar a {
+                text-decoration: none;
+                color: #E0E0E0;
+                font-weight: bold;
+                font-size: 14px;
+                position: relative;
+            }
+            .navigation-bar a:hover{
+                text-decoration: underline;
+                padding: 5px 15px;
+                border-radius: 10px;
+                border: 2px;
+                color: black;
+                background-color: #E0E0E0 ;
+                transition: 0.4s ease;
+                cursor: pointer;
+            }
+            .signin-button{
+                margin-right: 15px;
+                color: #1E1E1E;
+                background-color: #E0E0E0;
+                border-radius: 5px;
+                padding: 5px 10px;
+                cursor: pointer;
+            }
+            .signout-button{
+                margin-right: 20px;
+                color: #1E1E1E;
+                background-color: #E0E0E0;
+                border-radius: 5px;
+                padding: 5px 10px;
+                cursor: pointer;
+                display: none;
+            }
+            #userauth-form ,#userauth-form2{
+                position: fixed;
+                inset: 0;
+                z-index: 2000;
+                display: none;
+            }
+
+            .auth-overlay {
+                position: absolute;
+                inset: 0;
+                background: rgba(0,0,0,0.5);
+            }
+
+            .auth-box {
+                position: relative;
+                background: #E0E0E0;
+                width: 450px;
+                
+                padding: 20px;
+                border-radius: 10px;
+                z-index: 1000;
+                margin: auto;
+                top: 120px;
+            }
+            .form-item{
+        
+                margin: 40px 30px;
+                height: 20px;
+                padding: 5px 15px;
+                font-size: 17px;
+            
+            }
+            .form-item input{
+                width: 50%;
+                font-size: 15px;
+
+            }  
+            .form-error{
+                color: red;
+                font-weight: bold;
+                margin-left: 15px;
+                display: block;
+            }
+            .submit-button{
+                margin-left: 130px;
+                border-radius: 10px;
+                cursor: pointer;
+                padding: 10px 20px;
+                background-color: black;
+                color: white;
+            }
+            html{
+                scroll-behavior: smooth;
+                scroll-padding-top: 60px;
+            }
+            #home,#search,#weather,#about,#footer{
+                color: black;
+                font-weight: bold;
+                font-size: 14px; 
+                margin-bottom: 40px;
+                              
+            }
+            
+            .searchbar{
+                width: 800px;
+                padding-left: 10px;
+                padding-top: 7px;
+                padding-bottom: 7px;
+                
+                display: inline-block;
+                height: 20px;
+                border-style: solid;
+                border-color: lightgray;
+            }
+            .search-icon{
+                display: inline-block;
+                border-width: 2px;
+                background-color: rgba(0,0,0,0.18);
+                border-style: solid;
+                cursor: pointer;
+                border-color: lightgray;
+                padding: 10px 10px; 
+            }
+            .search-icon:active{
+                border-color: black;
+                transition: 0.2s ease;
+            }
+
+
+            .welcome-text{
+                text-align: center;
+                color: black;
+                display: none;
+                font-size: medium;
+                font-weight: 500;
+                margin-top: 20px;
+            }
+            #weather{
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                flex-direction: column;
+                font-size: 30px;
+                color: black;
+                display: none;
+            }
+            .weather-container{
+                border-width: 2px;
+                border-style: solid;
+                padding: 20px 60px;
+                border-radius: 14px;
+                border-color: #E0E0E0;
+                display: none;
+                
+                
+            }
+            .weather-heading{
+                font-size: 24px;
+                text-align: center;
+                color: #E0E0E0;
+                text-decoration: underline;
+            }
+            .list-item{
+                font-size: 20px;
+                color: #E0E0E0;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            #about{
+                align-items: center;
+                justify-content: center;
+                display: flex;
+                flex-direction: column;
+                font-size: 30px;
+                color: black;
+            }
+            .about-text{
+                font-weight: 500;
+                font-size: medium;
+                text-align: center;
+                color: black;
+            }
+            .about-photo{
+                object-fit: contain;
+                height: 400px;
+            
+            }
+            .footer{
+                background-color: #1E1E1E;
+                height: 150px;
+                color: #1E1E1E;
+                /* position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0; */
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                padding-bottom: 20px;
+                margin-bottom: 0px;
+                margin-top: 100px;
+
+            }
+            .footer a{
+                text-decoration: none;
+                color: #E0E0E0;
+                font-weight: bold;
+                font-size: 14px;
+                position: relative;
+            }
+            .footer a:hover{
+                  text-decoration: underline;
+                padding: 5px 15px;
+                border-radius: 10px;
+                border: 2px;
+                color: black;
+                background-color: #E0E0E0 ;
+                transition: 0.4s ease;
+                cursor: pointer;
+            }  
+            .back-to-top{
+                background-color: #1E1E1E;
+                color:#E0E0E0;
+                font-size: 20px;
+                border: none;
+                cursor: pointer;
+            }
+            .middle-section{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 30px;
+            }
+            .footer-image{
+                height: 20px;
+                object-fit: contain;
+                background-color: #1E1E1E;
+                
+            }
+            .bottom-section{
+                display: flex;
+                align-items: center;
+                justify-content: start;
+        
+            }
+            .bottom-text{
+                color: #E0E0E0;
+                font-size: 20px;
+                font-weight: bold;
+                margin-left: 50px;
+                margin-right: 50px;
+            }

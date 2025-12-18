@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html >
+    <head>
+        <title>WebTask</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="webstyle.css">
+        
+    </head>
+    <body style="padding-top: 60px;" >
+        
+        <div class="background">
+            <div class="overlay"></div>
+        </div>
+        <div class="navigation-bar">
+            <div class="navigation-elements">
+                
+                <a href="#search">Search</a>
+                <a href="#home">Home</a>
+                <a href="#weather">Weather</a>
+                <a href="#about">About</a>
+                <a href="#footer">Footer</a>
+            </div>
+            <div class="navigation-buttons">
+                <button class="signin-button" id="signin-btn">SIGN IN</button>
+                <button class="signin-button" id="signup-btn">SIGN UP</button>
+                <button class="signout-button" id="signout-btn">SIGN OUT</button>
+            </div>
+
+            </div>
+            
+                <div id="search">Search section
+                     
+                   <div style="display: flex;
+                    justify-content: center;
+                    align-items: center;">
+
+                    <input id="search-input" class="searchbar" type="text" placeholder="Enter a city name(e.g.,London, Mumbai)">
+                    <i class="fa fa-search search-icon"></i>
+                    </div>
+                    <p class="error"></p>
+
+                </div>
+                <div id="home">Home section
+
+                    
+                    <div class="welcome-text"></div>
+                </div>
+                <div id="weather">Weather section
+                    <div class="weather-container">
+                        <h2 class="weather-heading">Weather Details</h2>
+                        <ul class="weather-list">
+                            <li id="city-name" class="list-item">City name :</li>
+                            <li id="current-date" class="list-item">Current date :</li>
+                            <li id="weather-description" class="list-item">Weather Desciption :</li>
+                            <li id="city-temperature" class="list-item">Current temperature :</li>
+                            <li id="city-humidity" class="list-item">Humidity percentage :</li>
+                            <li id="wind-speed" class="list-item">Wind speed :</li>
+                            <li id="atmospheric-pressure" class="list-item">Atmospheric pressure :</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div id="about">About section ⛅
+                    <p class="about-text" >The Application lets a person check weather of any city required
+                        . It shows details of weather such as temperature ,humidity, wind 
+                        speed .The website uses a combination of HTML and  CSS, along with 
+                        the concepts of  DOM and API fetching of Javascript. 
+                        
+                    </p>
+                    <div >
+                        
+                         <img class="about-photo" src="icons/generate an image of weather photo_files/97c968d6-ce5d-4aa4-adff-4f296ba2e2f9.png">
+                    <img class="about-photo" src="icons/b247b4bd-5541-4e8b-bf45-65d7851b354e.png">
+                    </div>
+                   
+                </div>
+                
+                            
+            
+                
+    <div  id="footer"   class="footer">
+        <div class="top-section">
+            <a href="#home" class="back-to-top">&uarr;</a>
+        </div>
+         
+        <div class="middle-section">
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" class="footer-image">
+            </a>
+
+            <a href="https://www.instagram.com/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/1384/1384063.png" class="footer-image">
+            </a>
+
+            <a href="https://www.linkedin.com/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/3536/3536505.png" class="footer-image">
+            </a>
+
+            <a href="https://github.com/" target="_blank">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" class="footer-image">
+            </a>
+        </div>
+    
+         <div class="bottom-section">
+            <a class="bottom-text" href="https://www.privacypolicies.com/live/9e57a4e3-2d11-48a5-8c8b-97c3a3e8a1d1" target="_blank">Privacy Policy</a>
+            <a class="bottom-text" href="https://www.privacypolicies.com/live/84c5c544-de6a-4e61-b04e-086c7bc7e6fc" target="_blank">Terms And Conditions</a>
+            <a class="bottom-text" href="https://www.websitepolicies.com/live/781dc41-39d9-42f5-9ac1-f6948b4b8fc7" target="_blank">Copyright</a>
+         </div>
+        
+         
+    </div>
+    <form id="userauth-form" name="myform" onsubmit="return validateForm()">
+        <div class="auth-overlay"></div>
+        <div class="auth-box">
+            <div class="form-item" id="name">
+                Name : <input type="text" name="fname"><span class="form-error"></span>
+            </div>
+            <div class="form-item" id="email">
+                Email : <input type="email" name="femail"><span class="form-error"></span>
+            </div>
+            <div class="form-item" id="password">
+                Password : <input type="password" name="fpass"><span class="form-error"></span>
+            </div>
+            <input type="submit" value="SUBMIT" class="submit-button">
+        </div>
+    </form>
+
+
+
+    <form id="userauth-form2" name="myform2" onsubmit="return validateForm2()">
+        <div class="auth-overlay"></div>
+        <div class="auth-box">
+
+            <div class="form-item" id="email2">
+                Email : <input type="email" name="femail2"><span class="form-error"></span>
+            </div>
+            <div class="form-item" id="password2">
+                Password : <input type="password" name="fpass2"><span class="form-error"></span>
+            </div>
+            <input type="submit" value="SUBMIT" class="submit-button">
+        </div>
+    </form>
+    <script src="Webtask.js"></script>
+    </body>
+
+</html>
